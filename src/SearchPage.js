@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
+import data from "./data.json"
 
-const sampleData = [
-  { id: 1, title: "React Basics", category: "React" },
-  { id: 2, title: "Understanding JavaScript Closures", category: "JavaScript" },
-  { id: 3, title: "CSS Grid and Flexbox", category: "CSS" },
-  { id: 4, title: "Advanced React Patterns", category: "React" },
-  { id: 5, title: "TypeScript Essentials", category: "TypeScript" },
-];
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,7 +15,7 @@ const SearchPage = () => {
     setSelectedCategory(e.target.value);
   };
 
-  const filteredData = sampleData.filter((item) => {
+  const filteredData = data.filter((item) => {
     const matchesSearchTerm = item.title
       .toLowerCase()
       .includes(searchTerm.toLowerCase());

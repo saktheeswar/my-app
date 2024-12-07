@@ -1,0 +1,7 @@
+[
+    { "id": 1, "title": "React Basics", "category": "React" },
+    { "id": 2, "title": "Understanding JavaScript Closures", "category": "JavaScript" },
+    { "id": 3, "title": "CSS Grid and Flexbox", "category": "CSS" },
+    { "id": 4, "title": "Advanced React Patterns", "category": "React" },
+    { "id": 5, "title": "TypeScript Essentials", "category": "TypeScript" }
+]
